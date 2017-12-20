@@ -16,6 +16,9 @@ or add
 
 to the ```require``` section of your `composer.json` file.
 
+## Preview
+![MaterialTabsPreview](https://j.gifs.com/voY5Er.gif)
+
 ## Usage
 
 ### MaterialNavBar
@@ -26,19 +29,20 @@ use faboslav\materialtabs\MaterialTabs
 echo MaterialTabs::widget([
     'items' => [
         [
-            'label' => 'Tab one',
-            'content' => 'Tab one content'
+            'label' => '<i class="material-icons">home</i>',
+            'content' => 'Tab one content.'
         ],
         [
             'label' => 'Tab two',
             'content' => 'Tab two content<br><br>Text<br><br>Text',
-            'active' => true
         ],
         [
             'label' => 'Tab three',
-            'content' => 'Tab three content<br>Text<br>Text'
+            'content' => 'Tab three content<br>Text<br>Text',
+            'active' => true
         ],
         [
+            'icon' => '<i class="material-icons">people</i>',
             'label' => 'Tab four',
             'content' => 'Tab four content<br><br>Text<br>Text'
         ],

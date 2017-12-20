@@ -1,0 +1,263 @@
+.material-tabs {
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.material-tabs nav {
+  position: relative;
+  z-index: 1;
+  height: 48px;
+  overflow: hidden;
+  background: #1976d2;
+}
+.material-tabs nav.with-icons {
+  height: 72px;
+}
+.material-tabs nav.with-icons .left-fade,
+.material-tabs nav.with-icons .right-fade {
+  height: 72px;
+}
+.material-tabs nav .left-fade,
+.material-tabs nav .right-fade {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 48px;
+}
+.material-tabs nav .left-arrow,
+.material-tabs nav .right-arrow {
+  position: absolute;
+  top: 0;
+  width: 27px;
+  height: inherit;
+}
+.material-tabs nav .left-fade {
+  left: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1976d2+0,1976d2+45,1976d2+100&1+0,1+45,0+100 */
+  background: -moz-linear-gradient(left, #337ab7 0%, #337ab7 45%, rgba(51, 122, 183, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #337ab7 0%, #337ab7 45%, rgba(51, 122, 183, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #337ab7 0%, #337ab7 45%, rgba(51, 122, 183, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1976d2', endColorstr='#001976d2', GradientType=1);
+  /* IE6-9 */
+}
+.material-tabs nav .left-fade .left-arrow {
+  left: 0;
+  background: url('../img/chevron-left.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.material-tabs nav .right-fade {
+  right: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1976d2+0,1976d2+55,1976d2+100&0+0,1+55,1+100 */
+  background: -moz-linear-gradient(left, rgba(51, 122, 183, 0) 0%, #337ab7 55%, #337ab7 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(51, 122, 183, 0) 0%, #337ab7 55%, #337ab7 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(51, 122, 183, 0) 0%, #337ab7 55%, #337ab7 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001976d2', endColorstr='#1976d2', GradientType=1);
+  /* IE6-9 */
+}
+.material-tabs nav .right-fade .right-arrow {
+  right: 0;
+  background: url('../img/chevron-right.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.material-tabs nav .viewport {
+  width: 100%;
+  height: 200%;
+  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.material-tabs nav ul {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-inline-flex;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+  position: relative;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+}
+.material-tabs nav ul li {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-inline-flex;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+  min-width: 56px;
+  max-width: 264px;
+  padding: 0 24px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.material-tabs nav ul li.active {
+  color: #fff;
+  cursor: default;
+}
+.material-tabs nav ul li .nav-tab-content {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-inline-flex;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.material-tabs nav ul li .nav-tab-content > i {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.material-tabs nav ul .material-tabs-border {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  background: #ff5252;
+}
+.material-tabs nav ul .material-tabs-border.to-left {
+  -webkit-transition: left 0.125s cubic-bezier(0.35, 0, 0.25, 1), right 0.25s cubic-bezier(0.35, 0, 0.25, 1);
+  -moz-transition: left 0.125s cubic-bezier(0.35, 0, 0.25, 1), right 0.25s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: left 0.125s cubic-bezier(0.35, 0, 0.25, 1), right 0.25s cubic-bezier(0.35, 0, 0.25, 1);
+}
+.material-tabs nav ul .material-tabs-border.to-right {
+  -webkit-transition: left 0.25s cubic-bezier(0.35, 0, 0.25, 1), right 0.125s cubic-bezier(0.35, 0, 0.25, 1);
+  -moz-transition: left 0.25s cubic-bezier(0.35, 0, 0.25, 1), right 0.125s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: left 0.25s cubic-bezier(0.35, 0, 0.25, 1), right 0.125s cubic-bezier(0.35, 0, 0.25, 1);
+}
+.material-tabs .tabs {
+  position: relative;
+  overflow: hidden;
+  background: #f6f6f6;
+  border: 1px solid #e1e1e1;
+  -webkit-transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.material-tabs .tabs .tab-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  width: 100%;
+  padding: 24px;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
+}
+.material-tabs .tabs .tab-content.active {
+  display: block;
+  position: relative;
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+.material-tabs .tabs .tab-content.active ~ .tab-content {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.material-tabs .ripple-wrapper {
+  display: block;
+  position: absolute;
+  background: rgba(255, 82, 82, 0.2);
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+.material-tabs .ripple-wrapper.animated {
+  animation: ripple 0.65s linear;
+  -webkit-animation: ripple 0.65s linear;
+  -moz-animation: ripple 0.65s linear;
+  -o-animation: ripple 0.65s linear;
+}
+.material-tabs .ripple {
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  outline: none;
+}
+@keyframes ripple {
+  100% {
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes ripple {
+  100% {
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+@-o-keyframes ripple {
+  100% {
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+@-moz-keyframes ripple {
+  100% {
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
